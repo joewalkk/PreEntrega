@@ -4,7 +4,7 @@ export const Cart = () => {
     return (
         <a>
             <MdOutlineShoppingCartCheckout className='iconoo' />
-            <span>2</span>
+            <span className='sp'>2</span>
         </a>
     )
 }

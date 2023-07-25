@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Outlet } from 'react-router-dom';
 import { Cart } from '../CartWidget/Cart';
 
 
@@ -12,14 +13,14 @@ export const Navbarr = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">SuePC</Navbar.Brand>
+          <Navbar.Brand href="/">SuePC</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="Categorías" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Notebooks</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Computadoras</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Tablets</NavDropdown.Item>
+                <NavDropdown.Item href="/category/notebooks">Notebooks</NavDropdown.Item>
+                <NavDropdown.Item href="/category/computadoras">Computadoras</NavDropdown.Item>
+                <NavDropdown.Item href="/category/tablets">Tablets</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Componentes" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Memoria Ram</NavDropdown.Item>
@@ -43,8 +44,8 @@ export const Navbarr = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
+      <Outlet />
     </>
-
+    
   )
 }
