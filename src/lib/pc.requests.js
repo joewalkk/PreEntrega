@@ -11,7 +11,7 @@ const PCS = [
     },
     {
       id: 2,
-      title: "Pc Armada Económica Alto Rendimiento Oficina",
+      title: "Pc Armada Económic Alto Rendimiento Oficina",
       category: "computadoras",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum non voluptas eius earum. Reiciendis error a quod impedit ex!",
