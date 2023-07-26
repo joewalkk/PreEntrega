@@ -6,16 +6,19 @@ import "./item.css";
 export const Item = ({ img, category, title,id,price }) => {
     const navigate = useNavigate();
     return (
-        <div onClick={() => navigate(`/item/${id}`)}>
-            <div>
+        <div className="item" onClick={() => navigate(`/item/${id}`)}>
+            <div className="item-image">
                 <img src={img}/>
             </div>
-            <div>
-                <div>
-                    <span color="black">Categoría: {category}</span>
-                    <span>{title}</span>
+            <div className="item__content">
+                <div className="item__content-info">
+                    <span className="item__content-category">Categoría: {category}</span>
+                    <br/>
+                    <span className="item__content-title">{title}</span>
+                    <br/>
+                    <span className="item__content-price">${price}</span>
                 </div>
-                <span>${price}</span>
+                
             </div>
            
         </div>

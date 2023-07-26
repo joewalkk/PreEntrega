@@ -2,39 +2,48 @@ import { useEffect } from "react";
 import { useState } from "react"
 import { ItemCount } from "../components/ItemCount/ItemCount";
 import { getPC } from "../lib/pc.requests";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
+import "./detail.css";
 
 
-export const Detail= () => {
-    const {id} = useParams();
-    const [pc,setPc] = useState({});
+export const Detail = () => {
+    const { id } = useParams();
+    const [pc, setPc] = useState({});
 
     useEffect(() => {
         getPC(+id).then((res) => {
             setPc(res);
         })
-    },[]);
+    }, []);
 
-    if(!Object.keys(pc).length) return
+    if (!Object.keys(pc).length) return
 
-    return(
+    return (
         <div>
-            <div>
+            <div className="container-detail">
                 <div>
-                    <img src={pc.img}/>
+                    <img src={pc.img} />
                 </div>
-                <div>
-                    <span>{pc.title}</span>
-                    <p>{pc.description}</p>
-                    <span>
+                <div className="info">
+                    <span className="titulo">{pc.title}</span>
+                    <p className="description">Descripción:</p>
+                    <p className="description-info"> {pc.description}</p>
+                    <span className="price">
                         $
                         {pc.price}
                     </span>
-                    <span>Quedan {pc.stock} unidades</span>
+                    <div className="stock">
+                        <span className="stock-span">Quedan {pc.stock} unidades!!</span>
+                        <div className="counter">
+                            <ItemCount stock={pc.stock} onAdd={() => alert("Comprados")} />
+                        </div>
+                    </div>
 
-                    <ItemCount stock={pc.stock} onAdd={() => alert("Comprados")}/>
                 </div>
+
+
             </div>
+
         </div>
     )
 }

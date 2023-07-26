@@ -11,7 +11,7 @@ const PCS = [
     },
     {
       id: 2,
-      title: "Pc Armada Económica Alto Rendimiento Oficina Estudio 8gb 1tb",
+      title: "Pc Armada Económica Alto Rendimiento Oficina",
       category: "computadoras",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum non voluptas eius earum. Reiciendis error a quod impedit ex!",
@@ -33,7 +33,7 @@ const PCS = [
     },
     {
       id: 4,
-      title: "Lenovo Tab M10 FHD Plus 2nd Gen TB-X606F 10.3",
+      title: "Lenovo Tab M10 FHD Plus",
       category: "tablets",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum non voluptas eius earum. Reiciendis error a quod impedit ex!",
@@ -44,7 +44,7 @@ const PCS = [
     },
     {
       id: 5,
-      title: "Samsung Galaxy Tab A A8 SM-X200 - Dark gray - 4 GB - 64 GB - 10.5",
+      title: "Samsung Galaxy Tab A A8 SM-X200",
       category: "tablets",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum non voluptas eius earum. Reiciendis error a quod impedit ex!",
@@ -55,7 +55,7 @@ const PCS = [
     },
     {
       id: 6,
-      title: "Pc Armada Gamer Amd Ryzen 5 5600g 12 Nucleo Ram 16gb Ssd 480",
+      title: "Pc Armada Gamer Amd Ryzen 5 5600g",
       category: "computadoras",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum non voluptas eius earum. Reiciendis error a quod impedit ex!",

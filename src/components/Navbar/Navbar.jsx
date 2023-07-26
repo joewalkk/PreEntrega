@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet } from 'react-router-dom';
 import { Cart } from '../CartWidget/Cart';
+import "./navbar.css";
 
 
 
@@ -13,39 +14,27 @@ export const Navbarr = () => {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
+          <img className='img' src="https://static.vecteezy.com/system/resources/previews/008/659/193/non_2x/eps10-white-monitor-or-pc-icon-in-simple-flat-trendy-modern-style-isolated-on-black-background-free-vector.jpg" />
+
           <Navbar.Brand href="/">SuePC</Navbar.Brand>
+
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <NavDropdown title="Categorías" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/category/notebooks">Notebooks</NavDropdown.Item>
-                <NavDropdown.Item href="/category/computadoras">Computadoras</NavDropdown.Item>
-                <NavDropdown.Item href="/category/tablets">Tablets</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Componentes" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Memoria Ram</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Discos</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Motherboard</NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Accesorios" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Mouse</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Teclados</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Parlantes</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/category/notebooks">Notebooks</Nav.Link>
+              <Nav.Link href="/category/computadoras">Computadoras</Nav.Link>
+              <Nav.Link href="/category/tablets">Tablets</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link href="#deets">Contacto</Nav.Link>
-
             </Nav>
-
             <Cart />
-
-
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       <Outlet />
     </>
-    
+
   )
 }

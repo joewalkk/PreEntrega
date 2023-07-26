@@ -1,0 +1,54 @@
+
+.container-detail{
+    display: flex;
+    position:relative;
+    left: 30px;
+    top: 20px;
+    
+    /*border-style: solid;
+    border-color: rgb(187, 185, 185);
+    border-radius: 15px;*/
+    margin-right: 350px;
+
+}
+.info{
+    position: relative;
+    top: 40px;
+}
+.titulo{
+    font-size: 2.2rem;
+}
+.description{
+    font-size: 1rem;
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+}
+.description-info{
+    position: relative;
+    top: 10px;
+   
+}
+.price{
+    position: relative;
+    top: 15px;
+    font-size:xx-large;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+.stock{
+    position: relative;
+    top: 50px;
+}
+.stock-span{
+    color:red;
+    font-weight: bolder;
+    font-style: italic;
+    
+}
+.counter{
+    position: relative;
+    top: 30px;
+    left: 150px;
+    
+}

@@ -19,7 +19,7 @@ export const Home=()=>{
     return(
         <div>
             <div>
-                <h5>{isLoading ? "Cargando..." : "Listo"}</h5>
+                {/* <h5>{isLoading ? "Cargando..." : "Listo"}</h5> */}
                 <ItemListContainer products={products}/>
             </div>
         </div>
