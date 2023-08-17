@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react"
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
-import { getPcs } from "../lib/pc.requests";
+import {  getPcs } from "../lib/pc.requests";
 
 
 export const Home=()=>{
@@ -9,6 +9,7 @@ export const Home=()=>{
     const [isLoading, setIsLoading]= useState(true);
 
     useEffect(()=>{
+        //cargarData()
         getPcs()
         .then(res => {
             setIsLoading(false);
