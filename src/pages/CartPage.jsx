@@ -139,7 +139,7 @@ export const CartPage = () => {
                     </>
                 ) : (
                     <>
-                        <h3>El Carrito está vacío</h3>
+                        <h3 className="h3">El Carrito está vacío</h3>
                         
                     </>
                 )}
