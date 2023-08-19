@@ -8,6 +8,7 @@ import { CartProvider } from "./state/Cart.context.jsx";
 import { CartPage } from "./pages/CartPage.jsx";
 
 
+
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -17,6 +18,7 @@ const routes = createBrowserRouter(
         <Route path="/item/:id" element={<Detail />} />
         <Route path="/category/:id" element={<Category />} />
         <Route path="/cart" element={<CartPage />} />
+        
       </Route>
 
     </>

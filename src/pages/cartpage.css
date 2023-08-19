@@ -1,0 +1,70 @@
+.cart__container{
+   position: relative;
+   margin-left: 50px;
+    width: 700px;
+    
+    
+}
+.button-vaciar{
+    background-color: #212529;
+    color: white;
+    position: relative;
+    margin-left: 450px;
+    top: 40px;
+}
+.container-button{
+    position: relative;
+    display: flex;
+    top: 50px;
+    left: 500px;
+}
+.form{
+    position: relative;
+    left: 350px;
+    width: 400px;
+    height: 400px;
+    background-color: #BDC8B0;
+    border-radius:  30px;;
+    
+}
+.form-input{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    top: 30px;
+    left: 30px;
+    grid-area: auto;
+}
+input{
+    border-radius: 5px;
+    width: 300px;
+}
+input:invalid {
+    border: 2px solid red;
+    
+  }
+  
+  input:valid {
+    border: 2px solid green;
+  }
+.button-pedir{
+    position:relative;
+    
+    margin-left: 125px;
+    margin-top: 40px;
+    border-color: #212529;
+    
+}
+.span{
+    cursor:pointer;
+    color:white;
+}
+.span:hover{
+    color:blue;
+    text-decoration: underline;
+}
+.table{
+    position: relative;
+    margin-left: 100px;
+}
+

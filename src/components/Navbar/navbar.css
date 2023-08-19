@@ -3,4 +3,20 @@
     height: 70px;
     margin-right: -120px;
 }
-
+.navbar_items{
+    display: flex;
+    gap: 24px;
+    margin-right: 25px;
+    margin-left: 25px;
+    color: #C7C8C9;
+}
+.navbar_items.active{
+    color:red;
+}
+.navbar-title{
+    color:#C7C8C9;
+    font-size: 30px;
+}
+.me-auto{
+    margin-left: 100px;
+}
